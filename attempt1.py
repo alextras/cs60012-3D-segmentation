@@ -284,7 +284,7 @@ cluster_res,_ = scipy.cluster.vq.kmeans(V, V[initial_clusters,:])
 idx,_ = scipy.cluster.vq.vq(V, cluster_res)
 
 for iter, i in enumerate(idx):
-	print iter, ": ", i
+	print (iter, ": ", i)
 print("mesh_segmentation: Done clustering!")
 
 writeoutputobj(sys.argv[2], idx, faces_array, vertices_array)
